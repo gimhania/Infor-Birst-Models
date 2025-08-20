@@ -1,6 +1,5 @@
 --K_InqubeBilling_Summary
 
-
 SELECT 
 summary.DatePart,
 sum(summary.Inbound_Rolls ) AS  Inbound, 
@@ -367,4 +366,5 @@ GROUP BY DatePart, Cal_Date
 
 )summary
 WHERE summary.DatePart is not NULL
+
 GROUP BY summary.DatePart
